@@ -2,6 +2,9 @@
 
 <%= render @article %>
 
+<h1>Showing article details</h1>
+<p><strong>Title:</strong><%= @article.title%></p>
+
 <div>
   <%= link_to "Edit this article", edit_article_path(@article) %> |
   <%= link_to "Back to articles", articles_path %>
